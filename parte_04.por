@@ -1,20 +1,22 @@
 programa {
   funcao inicio() {
-   qtd_carrinh_prod1 = qtd_carrinh_prod1 + quantidade_temp
-        estoque_prod1 = estoque_prod1 - quantidade_temp
-        escreva("Item adicionado ao carrinho com sucesso!")
+      // Variaveis de controle de navegação
+   inteiro opcao_menu_principal = -1
+   inteiro opcao_crud = -1
+   inteiro opcao_pagamento = 0
 
-      } senao {
-          escreva("Quantidade invalida ou estoque insuficiente!")
 
-      }
+   // Variavel auxiliar para pausar a tela
+   cadeia tecla_pausa = ""
 
-   }senao se (opcao_crud == 2)
-   {
-     se (quantidade_temp > 0 e quantidade_temp <= estoque_prod2) {
-         qtd_carrinh_prod2 = qtd_carrinh_prod2 + quantidade_temp
-         estoque_prod2 = estoque_prod2 - quantidade_temp
-         escreva("Item adicionado ao carrinho com sucesso!")
-}
-}
+
+   // preços e estoque fixos dos Produtos
+   real preco_prod1 = 150.0, preco_prod2 = 60.0, preco_prod3 = 250.0
+   inteiro estoque_prod1 = 10, estoque_prod2 = 15, estoque_prod3 = 8
+
+
+   // Variavel do CARRINHO DE COMPRAS (Qtds dos Itens)
+   inteiro qtd_carrinho_prod1 = 0
+   inteiro qtd_carrinho_prod2 = 0
+  }
 }
